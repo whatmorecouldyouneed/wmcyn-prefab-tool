@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{projectName}}</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <h1>Welcome to {{projectName}}</h1>
+    <section>
+      <h2>Join our mailing list</h2>
+      <form id="newsletter-form">
+        <input type="email" id="email" placeholder="Enter your email" required />
+        <button type="submit">Subscribe</button>
+        <p id="form-message"></p>
+      </form>
+    </section>
+    <section id="shopify-section" style="display:none">
+      <h2>Shop</h2>
+      <div id="shopify-products"></div>
+    </section>
+  </main>
+  <script src="firebaseConfig.js"></script>
+  <script src="addToMailingList.js"></script>
+  <script src="shopify.js"></script>
+</body>
+</html> 
